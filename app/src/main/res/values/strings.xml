@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Operation</string>
+    <string name="title_activity_tech">TechActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Login">Login</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="elec">كهرباء</string>
+    <string name="mecha">ميكانيكا</string>
+    <string name="permit">اوامر الشغل</string>
+    <string name="emp">شئون عاملين</string>
+    <string name="techa">شئون فنية</string>
+    <string name="home">Back</string>
+    <string name="tranc">Transformers</string>
+    <string name="dis">Dis_Sg_Mcc</string>
+    <string name="dsm">Dis_Sg_Mcc</string>
+    <string name="chinv">Chargers_Inverters</string>
+    <string name="chin">Chargers , Inverters</string>
+    <string name="fans">Fans</string>
+    <string name="etech">Technical</string>
+    <string name="transformers">Transformers</string>
+    <string name="ct1">CT_1</string>
+    <string name="main">Main</string>
+    <string name="oiltemp">Oil.Temp</string>
+</resources>

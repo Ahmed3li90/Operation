@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ElecActivity">
+
+    <Button
+        android:id="@+id/trnsBtn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="@string/tranc"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/dsmBtn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="@string/dsm"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+    <Button
+        android:id="@+id/chinvBtn"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="@string/chin"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+    <Button
+        android:id="@+id/fanBtn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="@string/fans"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+    <Button
+        android:id="@+id/etechBtn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="@string/etech"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+</LinearLayout>
