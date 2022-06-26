@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,38 +7,45 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 <!--        Diesel-->
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/diestxtView"
-        android:text="@string/diesel"
-        android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/diestxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/diesel"
+            android:textAllCaps="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvOtD"
-        android:text="@string/ot"
-        android:layout_marginLeft="50dp"
-        android:layout_below="@+id/diestxtView"/>
+        <TextView
+            android:id="@+id/tvOtD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diestxtView"
+            android:layout_marginStart="50dp"
+            android:text="@string/ot" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/edOtD"
-        android:layout_marginLeft="50dp"
-        android:layout_below="@id/tvOtD" />
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/tvOtD"
+        android:autofillHints=""
+        android:inputType=""
+        tools:ignore="LabelFor" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvWtD"
         android:text="@string/wt"
-        android:layout_marginLeft="130dp"
+        android:layout_marginStart="130dp"
         android:layout_alignBaseline="@+id/tvOtD"/>
 
     <EditText
@@ -97,30 +102,37 @@
         android:layout_below="@id/rWDOn"
         android:layout_marginLeft="270dp"/>
 
+        <View
+            android:id="@+id/divider0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rWDOff"
+            android:background="@color/black"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
 <!--Switch Gear-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv6K"
-            android:text="@string/k6"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv6"
-            android:text="@string/k6v"
-            android:layout_below="@+id/tv6K"
-            android:layout_marginLeft="60dp"/>
 
         <TextView
+            android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/divider0"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/SwitchGear"
+            android:textAllCaps="true"/>
+
+        <TextView
             android:id="@+id/tvV1"
-            android:text="@string/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/tv6"
-            android:layout_marginLeft="140dp"/>
+            android:layout_marginStart="140dp"
+            android:text="@string/v1" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -128,14 +140,15 @@
             android:id="@+id/etKV11"
             android:layout_below="@+id/tvV1"
             android:layout_marginLeft="135dp"/>
+
         <TextView
+            android:id="@+id/tvK61"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvK61"
-            android:text="@string/k1"
-            android:layout_marginLeft="70dp"
             android:layout_alignBaseline="@+id/etKV11"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/k1" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -247,23 +260,25 @@
             android:layout_height="wrap_content"
             android:id="@+id/etKV25"
             android:layout_alignBaseline="@+id/etKV15"
-            android:layout_marginLeft="200dp"/>
+            android:layout_marginStart="200dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etKV26"
             android:layout_alignBaseline="@+id/etKV16"
-            android:layout_marginLeft="200dp"/>
-
+            android:layout_marginStart="200dp"
+            android:autofillHints=""
+            android:inputType=""
+            tools:ignore="LabelFor" />
 
 
         <TextView
+            android:id="@+id/tvV3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvV3"
-            android:text="@string/v3"
             android:layout_alignBaseline="@+id/tvV2"
-            android:layout_marginLeft="260dp"/>
+            android:layout_marginLeft="260dp"
+            android:text="@string/v3" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -360,7 +375,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvlc"
             android:text="@string/lc"
-            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
             android:layout_below="@+id/divider3"
             android:layout_marginTop="10dp"/>
 
@@ -369,7 +384,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvincome1"
             android:text="@string/income1"
-            android:layout_marginLeft="150dp"
+            android:layout_marginStart="150dp"
             android:layout_below="@+id/tvlc"
             android:layout_marginTop="10dp"/>
         <TextView
@@ -386,7 +401,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvlc1"
             android:text="@string/lc1"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_below="@+id/tvincome1"
             android:layout_marginTop="20dp"/>
         <EditText
@@ -433,14 +448,15 @@
             android:id="@+id/tvlc2"
             android:text="@string/lc2"
             android:layout_below="@+id/tvlc1"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_marginTop="20dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etLc2In11"
             android:layout_alignBaseline="@+id/tvlc2"
-            android:layout_marginLeft="140dp"/>
+            android:layout_marginStart="140dp"
+            android:autofillHints="" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -479,20 +495,20 @@
             android:id="@+id/tvlc3"
             android:text="@string/lc3"
             android:layout_below="@+id/tvlc2"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_marginTop="20dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etLc3In11"
             android:layout_alignBaseline="@+id/tvlc3"
-            android:layout_marginLeft="140dp"/>
+            android:layout_marginStart="140dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etLc3In12"
             android:layout_alignBaseline="@+id/tvlc3"
-            android:layout_marginLeft="170dp"/>
+            android:layout_marginStart="170dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -576,13 +592,13 @@
             android:paddingTop="20dp" />
 
         <TextView
+            android:id="@+id/tvmcc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvmcc"
-            android:text="@string/mcc"
             android:layout_below="@+id/divider4"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:text="@string/mcc" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -590,14 +606,14 @@
             android:id="@+id/tvmccA"
             android:text="@string/a"
             android:layout_below="@+id/tvmcc"
-            android:layout_marginLeft="140dp"/>
+            android:layout_marginStart="140dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvmccM01"
             android:text="@string/m01"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_alignBaseline="@+id/etmccAm01"
             android:layout_marginTop="20dp"/>
         <EditText
@@ -605,13 +621,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/etmccAm01"
             android:layout_below="@+id/tvmccA"
-            android:layout_marginLeft="135dp"/>
+            android:layout_marginStart="135dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etmccAm02"
             android:layout_below="@+id/etmccAm01"
-            android:layout_marginLeft="135dp"/>
+            android:layout_marginStart="135dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -645,14 +661,14 @@
             android:id="@+id/tvmccV1"
             android:text="@string/v1"
             android:layout_alignBaseline="@+id/tvmccA"
-            android:layout_marginLeft="200dp"/>
+            android:layout_marginStart="200dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvmccM02"
             android:text="@string/m02"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_alignBaseline="@+id/etmccAm02"
             android:layout_marginTop="20dp"/>
         <EditText
@@ -660,19 +676,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/etmccVm01"
             android:layout_alignBaseline="@+id/etmccAm01"
-            android:layout_marginLeft="195dp"/>
+            android:layout_marginStart="195dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etmccVm02"
             android:layout_alignBaseline="@+id/etmccAm02"
-            android:layout_marginLeft="195dp"/>
+            android:layout_marginStart="195dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etmccVm03"
             android:layout_alignBaseline="@+id/etmccAm03"
-            android:layout_marginLeft="195dp"/>
+            android:layout_marginStart="195dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -700,14 +716,14 @@
             android:id="@+id/tvmccV2"
             android:text="@string/v2"
             android:layout_alignBaseline="@+id/tvmccA"
-            android:layout_marginLeft="260dp"/>
+            android:layout_marginStart="260dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvmccM03"
             android:text="@string/m03"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_alignBaseline="@+id/etmccAm03"
             android:layout_marginTop="20dp"/>
         <EditText
@@ -715,13 +731,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/etmccV2m01"
             android:layout_alignBaseline="@+id/etmccAm01"
-            android:layout_marginLeft="258dp"/>
+            android:layout_marginStart="258dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etmccV2m02"
             android:layout_alignBaseline="@+id/etmccAm02"
-            android:layout_marginLeft="258dp"/>
+            android:layout_marginStart="258dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -753,14 +769,14 @@
             android:id="@+id/tvmccV3"
             android:text="@string/v3"
             android:layout_alignBaseline="@+id/tvmccA"
-            android:layout_marginLeft="320dp"/>
+            android:layout_marginStart="320dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvmccM04"
             android:text="@string/m04"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_alignBaseline="@+id/etmccAm04"
             android:layout_marginTop="20dp"/>
         <TextView
@@ -768,7 +784,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvmccM05"
             android:text="@string/m05"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_alignBaseline="@+id/etmccAm05"
             android:layout_marginTop="20dp"/>
         <TextView
@@ -776,7 +792,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvmccM06"
             android:text="@string/m06"
-            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
             android:layout_alignBaseline="@+id/etmccAm06"
             android:layout_marginTop="20dp"/>
         <EditText

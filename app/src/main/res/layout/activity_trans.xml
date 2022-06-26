@@ -11,11 +11,11 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <!-- CT_1 Main -->
@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:layout_marginEnd="6dp"
-                android:layout_marginRight="6dp"
                 android:layout_marginBottom="3dp"
                 android:text="@string/transformers"
                 android:textSize="20sp"
@@ -38,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_transhl"
                 android:layout_marginStart="20sp"
-                android:layout_marginLeft="20sp"
                 android:layout_marginBottom="3sp"
                 android:text="@string/ct1"
                 android:textColorHighlight="@color/cardview_dark_background"
@@ -51,7 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_c1t"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="3sp"
                 android:text="@string/main"
@@ -63,7 +61,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_mc1t"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/oiltemp" />
 
@@ -73,11 +70,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_otmc1t"
                 android:layout_marginStart="55dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:hint="@string/c"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_wtc1t"
@@ -85,7 +83,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_mc1t"
                 android:layout_marginStart="150dp"
-                android:layout_marginLeft="40dp"
                 android:text="@string/windtemp" />
 
             <EditText
@@ -94,17 +91,17 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_wtc1t"
                 android:layout_marginStart="175dp"
-                android:layout_marginLeft="160dp"
-                android:hint="C"
+                android:hint="@string/C"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_lcc1t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="280dp"
-                android:layout_marginLeft="280dp"
                 android:layout_marginTop="80dp"
                 android:gravity="center_horizontal"
                 android:text="@string/leakagecurrent"
@@ -116,18 +113,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcc1t"
                 android:layout_marginStart="280dp"
-                android:layout_marginLeft="280dp"
                 android:text="@string/r" />
 
             <EditText
                 android:id="@+id/et_rlcc1t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="275dp"
+                android:layout_marginStart="275dp"
                 android:layout_marginTop="100dp"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints=""
+                android:inputType="" />
 
 
             <TextView
@@ -136,18 +134,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcc1t"
                 android:layout_marginStart="325dp"
-                android:layout_marginLeft="325dp"
                 android:text="@string/s" />
 
             <EditText
                 android:id="@+id/et_slcc1t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="320dp"
+                android:layout_marginStart="320dp"
                 android:layout_marginTop="100dp"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType=""
+                android:autofillHints="" />
 
 
             <TextView
@@ -156,20 +155,21 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcc1t"
                 android:layout_marginStart="370dp"
-                android:layout_marginLeft="370dp"
                 android:text="@string/t" />
 
             <EditText
                 android:id="@+id/et_tlcc1t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="365dp"
+                android:layout_marginStart="365dp"
                 android:layout_marginTop="100dp"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints=""
+                android:inputType="" />
 
-            <!-- CTG1 Auxiliary -->
+            <!-- CT1 Auxiliary -->
 
 
             <TextView
@@ -177,7 +177,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_otc1t"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="4dp"
                 android:text="@string/aux"
@@ -189,7 +189,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac1t"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/oiltemp" />
 
@@ -199,11 +198,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_otac1t"
                 android:layout_marginStart="55dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:hint="@string/C_"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_xtac1t"
@@ -211,7 +211,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac1t"
                 android:layout_marginStart="125dp"
-                android:layout_marginLeft="60dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/xtemp" />
 
@@ -221,11 +220,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_xtac1t"
                 android:layout_marginStart="140dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:autofillHints=""
+                android:hint="@string/_c"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_ytac1t"
@@ -233,7 +233,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac1t"
                 android:layout_marginStart="210dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/ytemp" />
 
@@ -243,11 +242,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ytac1t"
                 android:layout_marginStart="225dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:autofillHints=""
+                android:hint="@string/C"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_tapac1t"
@@ -255,7 +255,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac1t"
                 android:layout_marginStart="300dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/tap" />
 
@@ -265,11 +264,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_tapac1t"
                 android:layout_marginStart="303dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints=""
+                android:inputType="" />
 
 
             <TextView
@@ -278,7 +278,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac1t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/ch" />
 
@@ -288,13 +287,14 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_tapac1t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
-            <!--excitattion CTG1-->
+            <!--excitation CT1-->
 
 
             <TextView
@@ -302,7 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_otac1t"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="4dp"
                 android:text="@string/excitation"
@@ -314,7 +314,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec1t"
                 android:layout_marginStart="70dp"
-                android:layout_marginLeft="70dp"
                 android:text="@string/temp" />
 
             <EditText
@@ -323,10 +322,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_tec1t"
                 android:layout_marginStart="80dp"
-                android:layout_marginLeft="80dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_1coolerexc1t"
@@ -334,8 +334,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec1t"
                 android:layout_marginStart="170dp"
-                android:layout_marginLeft="170dp"
-                android:text="1" />
+                android:text="@string/_1" />
 
             <RadioGroup
                 android:id="@+id/rg_1ec1t"
@@ -349,7 +348,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rg_1ec1t"
                 android:layout_marginStart="160dp"
-                android:layout_marginLeft="160dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -358,7 +356,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_onec1t"
                 android:layout_marginStart="160dp"
-                android:layout_marginLeft="160dp"
                 android:text="@string/off" />
 
             <TextView
@@ -367,8 +364,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec1t"
                 android:layout_marginStart="270dp"
-                android:layout_marginLeft="270dp"
-                android:text="2" />
+                android:text="@string/_2" />
 
 
             <RadioGroup
@@ -383,7 +379,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_2coolerexc1t"
                 android:layout_marginStart="255dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -392,7 +387,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_on2ec1t"
                 android:layout_marginStart="255dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/off" />
 
 
@@ -402,8 +396,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec1t"
                 android:layout_marginStart="360dp"
-                android:layout_marginLeft="360dp"
-                android:text="3" />
+                android:text="@string/_3" />
 
             <RadioGroup
                 android:id="@+id/rg_3ec1t"
@@ -417,7 +410,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_2coolerexc1t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="350dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -426,7 +418,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_on2ec1t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/off" />
 
             <View
@@ -436,7 +427,7 @@
                 android:layout_below="@+id/rb_off2ec1t"
                 android:background="@color/black" />
 
-            <!--CTG2 Main-->
+            <!--CT2 Main-->
 
 
             <TextView
@@ -445,9 +436,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/v_c12"
                 android:layout_marginStart="20sp"
-                android:layout_marginLeft="20sp"
                 android:layout_marginBottom="3sp"
-                android:text="@string/ctg2"
+                android:text="@string/ct2"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -458,7 +448,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_c2t"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="3sp"
                 android:text="@string/main"
@@ -470,7 +460,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_mc2t"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/oiltemp" />
 
@@ -480,11 +469,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_otmc2t"
                 android:layout_marginStart="55dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:autofillHints=""
+                android:hint="@string/c"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_wtc2t"
@@ -492,7 +482,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_mc2t"
                 android:layout_marginStart="150dp"
-                android:layout_marginLeft="40dp"
                 android:text="@string/windtemp" />
 
             <EditText
@@ -501,17 +490,17 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_wtc2t"
                 android:layout_marginStart="175dp"
-                android:layout_marginLeft="160dp"
-                android:hint="C"
+                android:autofillHints=""
+                android:hint="@string/c"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_lcc2t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="280dp"
-                android:layout_marginLeft="280dp"
                 android:layout_marginTop="440dp"
                 android:gravity="center_horizontal"
                 android:text="@string/leakagecurrent"
@@ -523,18 +512,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcc2t"
                 android:layout_marginStart="280dp"
-                android:layout_marginLeft="280dp"
                 android:text="@string/r" />
 
             <EditText
                 android:id="@+id/et_rlcc2t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="275dp"
+                android:layout_marginStart="275dp"
                 android:layout_marginTop="455dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
 
             <TextView
@@ -543,18 +533,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcc2t"
                 android:layout_marginStart="325dp"
-                android:layout_marginLeft="325dp"
                 android:text="@string/s" />
 
             <EditText
                 android:id="@+id/et_slcc2t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="320dp"
+                android:layout_marginStart="320dp"
                 android:layout_marginTop="455dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
 
             <TextView
@@ -563,20 +554,21 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcc2t"
                 android:layout_marginStart="370dp"
-                android:layout_marginLeft="370dp"
                 android:text="@string/t" />
 
             <EditText
                 android:id="@+id/et_tlcc2t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="365dp"
+                android:layout_marginStart="365dp"
                 android:layout_marginTop="455dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
-            <!-- CTG2 Aux-->
+            <!-- CT2 Aux-->
 
 
             <TextView
@@ -584,7 +576,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_otc2t"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="4dp"
                 android:text="@string/aux"
@@ -596,7 +588,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac2t"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/oiltemp" />
 
@@ -606,11 +597,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_otac2t"
                 android:layout_marginStart="55dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:autofillHints=""
+                android:hint="@string/c"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_xtac2t"
@@ -618,7 +610,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac2t"
                 android:layout_marginStart="125dp"
-                android:layout_marginLeft="60dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/xtemp" />
 
@@ -628,11 +619,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_xtac2t"
                 android:layout_marginStart="140dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:hint="@string/C"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_ytac2t"
@@ -640,7 +632,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac2t"
                 android:layout_marginStart="210dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/ytemp" />
 
@@ -650,11 +641,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ytac2t"
                 android:layout_marginStart="225dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C"
+                android:autofillHints=""
+                android:hint="@string/c"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_tapac2t"
@@ -662,9 +654,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac2t"
                 android:layout_marginStart="300dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/tap" />
+
 
             <EditText
                 android:id="@+id/et_tapac2t"
@@ -672,12 +664,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_tapac2t"
                 android:layout_marginStart="303dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginTop="-15dp"
                 android:layout_marginBottom="2dp"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
-
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_chac2t"
@@ -685,7 +678,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ac2t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/ch" />
 
@@ -695,13 +687,14 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_tapac2t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
-            <!--excitattion CTG2-->
+            <!--excitation CT2-->
 
 
             <TextView
@@ -709,7 +702,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_otac2t"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="4dp"
                 android:text="@string/excitation"
@@ -721,7 +714,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec2t"
                 android:layout_marginStart="70dp"
-                android:layout_marginLeft="70dp"
                 android:text="@string/temp" />
 
             <EditText
@@ -730,10 +722,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_tec2t"
                 android:layout_marginStart="80dp"
-                android:layout_marginLeft="80dp"
+                android:autofillHints=""
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_1coolerexc2t"
@@ -741,8 +734,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec2t"
                 android:layout_marginStart="170dp"
-                android:layout_marginLeft="170dp"
-                android:text="1" />
+                android:text="@string/_1_" />
 
             <RadioGroup
                 android:id="@+id/rg_1ec2t"
@@ -756,7 +748,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rg_1ec2t"
                 android:layout_marginStart="160dp"
-                android:layout_marginLeft="160dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -765,7 +756,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_onec2t"
                 android:layout_marginStart="160dp"
-                android:layout_marginLeft="160dp"
                 android:text="@string/off" />
 
             <TextView
@@ -774,8 +764,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec2t"
                 android:layout_marginStart="270dp"
-                android:layout_marginLeft="270dp"
-                android:text="2" />
+                android:text="@string/_2_" />
 
 
             <RadioGroup
@@ -790,7 +779,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_2coolerexc2t"
                 android:layout_marginStart="255dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -799,7 +787,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_on2ec2t"
                 android:layout_marginStart="255dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/off" />
 
 
@@ -809,8 +796,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_ec2t"
                 android:layout_marginStart="360dp"
-                android:layout_marginLeft="360dp"
-                android:text="3" />
+                android:text="@string/_3_"
+                tools:ignore="TooManyViews" />
 
             <RadioGroup
                 android:id="@+id/rg_3ec2t"
@@ -824,7 +811,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_2coolerexc2t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="350dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -833,7 +819,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_on2ec2t"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/off" />
 
             <View
@@ -843,7 +828,7 @@
                 android:layout_below="@+id/rb_off3ec2t"
                 android:background="@color/black" />
 
-            <!-- STG Main -->
+            <!-- ST Main -->
 
 
             <TextView
@@ -852,9 +837,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/v_c2s"
                 android:layout_marginStart="20sp"
-                android:layout_marginLeft="20sp"
                 android:layout_marginBottom="3sp"
-                android:text="@string/stg"
+                android:text="@string/st"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -865,7 +849,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_stgt"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="3sp"
                 android:text="@string/main"
@@ -877,7 +861,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_mstgt"
                 android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/oiltemp" />
 
@@ -887,9 +870,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_otmstgt"
                 android:layout_marginStart="55dp"
-                android:layout_marginLeft="50dp"
                 android:layout_marginBottom="2dp"
-                android:hint="C" />
+                android:hint="@string/c"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_wtstgt"
@@ -897,7 +881,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_mstgt"
                 android:layout_marginStart="150dp"
-                android:layout_marginLeft="40dp"
                 android:text="@string/windtemp" />
 
             <EditText
@@ -906,15 +889,15 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_wtstgt"
                 android:layout_marginStart="175dp"
-                android:layout_marginLeft="160dp"
-                android:hint="C" />
+                android:hint="@string/c"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_lcstgt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="280dp"
-                android:layout_marginLeft="280dp"
                 android:layout_marginTop="800dp"
                 android:gravity="center_horizontal"
                 android:text="@string/leakagecurrent"
@@ -926,7 +909,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcstgt"
                 android:layout_marginStart="280dp"
-                android:layout_marginLeft="280dp"
                 android:text="@string/r" />
 
 
@@ -934,8 +916,10 @@
                 android:id="@+id/et_rlcstgt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="275dp"
-                android:layout_marginTop="815dp" />
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="815dp"
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_Slcstgt"
@@ -943,15 +927,16 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcstgt"
                 android:layout_marginStart="325dp"
-                android:layout_marginLeft="325dp"
                 android:text="@string/s" />
 
             <EditText
                 android:id="@+id/et_slcstgt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="815dp" />
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="815dp"
+                android:autofillHints=""
+                android:inputType="" />
 
 
             <TextView
@@ -960,18 +945,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_lcstgt"
                 android:layout_marginStart="370dp"
-                android:layout_marginLeft="370dp"
                 android:text="@string/t" />
 
             <EditText
                 android:id="@+id/et_tlcstgt"
                 android:layout_width="19dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="365dp"
-                android:layout_marginTop="815dp" />
+                android:layout_marginStart="365dp"
+                android:layout_marginTop="815dp"
+                android:autofillHints=""
+                android:inputType="" />
 
 
-            <!--excitattion STG-->
+            <!--excitation ST-->
 
 
             <TextView
@@ -979,7 +965,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_otmstgt"
-                android:layout_marginLeft="30sp"
+                android:layout_marginStart="30sp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="4dp"
                 android:text="@string/excitation"
@@ -991,7 +977,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_estgt"
                 android:layout_marginStart="70dp"
-                android:layout_marginLeft="70dp"
                 android:text="@string/temp" />
 
             <EditText
@@ -1000,7 +985,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_testgt"
                 android:layout_marginStart="80dp"
-                android:layout_marginLeft="80dp" />
+                android:autofillHints=""
+                android:inputType="" />
 
             <TextView
                 android:id="@+id/tv_1coolerexstgt"
@@ -1008,8 +994,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_estgt"
                 android:layout_marginStart="170dp"
-                android:layout_marginLeft="170dp"
-                android:text="1" />
+                android:text="@string/_1" />
 
             <RadioGroup
                 android:id="@+id/rg_1estgt"
@@ -1023,7 +1008,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rg_1estgt"
                 android:layout_marginStart="160dp"
-                android:layout_marginLeft="160dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -1032,7 +1016,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_onestgt"
                 android:layout_marginStart="160dp"
-                android:layout_marginLeft="160dp"
                 android:text="@string/off" />
 
             <TextView
@@ -1041,8 +1024,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_estgt"
                 android:layout_marginStart="270dp"
-                android:layout_marginLeft="270dp"
-                android:text="2" />
+                android:text="@string/_2" />
 
 
             <RadioGroup
@@ -1057,7 +1039,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_2coolerexstgt"
                 android:layout_marginStart="255dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -1066,7 +1047,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_on2estgt"
                 android:layout_marginStart="255dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/off" />
 
 
@@ -1076,8 +1056,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_estgt"
                 android:layout_marginStart="360dp"
-                android:layout_marginLeft="360dp"
-                android:text="3" />
+                android:text="@string/_3" />
 
             <RadioGroup
                 android:id="@+id/rg_3estgt"
@@ -1091,7 +1070,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_2coolerexstgt"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="350dp"
                 android:text="@string/on" />
 
             <RadioButton
@@ -1100,20 +1078,17 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rb_on2estgt"
                 android:layout_marginStart="350dp"
-                android:layout_marginLeft="255dp"
                 android:text="@string/off" />
 
             <Button
                 android:id="@+id/home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home"
-                android:layout_gravity="center"
                 android:layout_below="@+id/rb_off3estgt"
+                android:layout_gravity="center"
+                android:layout_marginStart="160dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="160dp"/>
-
-
+                android:text="@string/home" />
 
 
         </RelativeLayout>

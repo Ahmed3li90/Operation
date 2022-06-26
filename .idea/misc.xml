@@ -6,12 +6,13 @@
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_choose.xml" value="0.27291666666666664" />
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_ci.xml" value="0.27291666666666664" />
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_dis_sg_mcc.xml" value="0.27291666666666664" />
-        <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_dsm.xml" value="0.27291666666666664" />
+        <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_dsm.xml" value="0.15013901760889714" />
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_elec.xml" value="0.24347826086956523" />
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_fan.xml" value="0.27291666666666664" />
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_login.xml" value="0.25885416666666666" />
         <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_tech.xml" value="0.27291666666666664" />
-        <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_trans.xml" value="0.18" />
+        <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_test.xml" value="0.5" />
+        <entry key="..\:/Projects/Operation/app/src/main/res/layout/activity_trans.xml" value="0.12353138637126553" />
       </map>
     </option>
   </component>

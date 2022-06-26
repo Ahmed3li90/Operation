@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TechnicalActivity">
+    tools:context=".TechActivity">
 
 
     <RelativeLayout
@@ -14,19 +12,19 @@
 
 
         <TextView
+            android:id="@+id/tvGA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvGA"
-            android:text="@string/gasArea"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/gasArea" />
 
         <TextView
             android:id="@+id/tvR1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="140dp"
             android:text="@string/r1" />
 
         <EditText
@@ -34,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvR1"
-            android:layout_marginLeft="137dp"
+            android:layout_marginStart="137dp"
             android:minWidth="48dp"
             android:minHeight="48dp" />
 
@@ -45,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="280dp"
+            android:layout_marginStart="280dp"
             android:text="@string/r2" />
 
         <EditText
@@ -53,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvR2"
-            android:layout_marginLeft="277dp"
+            android:layout_marginStart="277dp"
             android:minWidth="48dp"
             android:minHeight="48dp" />
 
@@ -63,7 +61,8 @@
             android:layout_height="1dp"
             android:layout_below="@+id/EtR2Gas"
             android:background="@color/black"
-            android:paddingTop="20dp" />
+            android:paddingTop="20dp"
+            android:layout_marginTop="10dp"/>
 
         <!-- Package CTG1 -->
 
@@ -72,8 +71,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/divider5"
-            android:layout_marginLeft="190dp"
-            android:text="@string/ctg1" />
+            android:layout_marginStart="190dp"
+            android:text="@string/ct1" />
 
 
         <TextView
@@ -81,9 +80,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tloc1"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Package" />
+            android:text="@string/controlPackage" />
 
         <TextView
             android:id="@+id/c1pmw"
@@ -280,7 +279,8 @@
             android:layout_height="1dp"
             android:layout_below="@+id/eti4c1"
             android:background="@color/black"
-            android:paddingTop="20dp" />
+            android:paddingTop="20dp"
+            android:layout_marginTop="10dp"/>
 
 
         <!-- Package CTG2 -->
@@ -291,7 +291,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/divider6"
             android:layout_marginLeft="190dp"
-            android:text="@string/ctg2" />
+            android:text="@string/ct2" />
 
 
         <TextView
@@ -299,9 +299,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tloc2"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Package" />
+            android:text="@string/package_" />
 
         <TextView
             android:id="@+id/c2pmw"
