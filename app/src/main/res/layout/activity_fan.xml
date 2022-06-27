@@ -1,9 +1,725 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FanActivity">
+    tools:context=".DsmActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_l0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/level_0"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/ct1_panal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ct1_panal"
+            android:textAllCaps="true" />
+
+        <!--        CT-1 PANAL SF-01 -->
+
+        <TextView
+            android:id="@+id/ct1_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sf_01" />
+
+        <RadioButton
+            android:id="@+id/ct1_f01AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct1_01"
+            android:layout_marginStart="35dp"
+            android:text="@string/aut" />
+
+        <RadioButton
+            android:id="@+id/ct1_f01MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f01AUT"
+            android:layout_marginStart="35dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/ct1_f01off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f01MAN"
+            android:layout_marginStart="35dp"
+            android:text="@string/off_" />
+
+        <!--        CT-1 PANAL SF-02-->
+
+
+        <TextView
+            android:id="@+id/ct1_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sf_02" />
+
+        <RadioButton
+            android:id="@+id/ct1_f02AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ct1_02"
+            android:layout_marginStart="115dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct1_f02MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f01AUT"
+            android:layout_marginStart="115dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct1_f02off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f02MAN"
+            android:layout_marginStart="115dp"
+            android:text="OFF" />
+
+
+        <!--        CT-1 PANAL SF-09-->
+
+
+        <TextView
+            android:id="@+id/ct1_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sf_09" />
+
+        <RadioButton
+            android:id="@+id/ct1_f09AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct1_02"
+            android:layout_marginStart="195dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct1_f09MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f09AUT"
+            android:layout_marginStart="195dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct1_f09off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f09MAN"
+            android:layout_marginStart="195dp"
+            android:text="OFF" />
+
+
+        <!--        CT-1 PANAL SF-10-->
+
+
+        <TextView
+            android:id="@+id/ct1_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/sf_10" />
+
+        <RadioButton
+            android:id="@+id/ct1_f10AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct1_02"
+            android:layout_marginStart="275dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct1_f10MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f10AUT"
+            android:layout_marginStart="275dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct1_f10off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f10MAN"
+            android:layout_marginStart="275dp"
+            android:text="OFF" />
+
+
+        <!--        CT-1 PANAL SF-11 -->
+
+        <TextView
+            android:id="@+id/ct1_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="260dp"
+            android:text="@string/sf_11" />
+
+        <RadioButton
+            android:id="@+id/ct1_f11AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct1_11"
+            android:layout_marginStart="35dp"
+            android:text="@string/aut" />
+
+        <RadioButton
+            android:id="@+id/ct1_f11MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f11AUT"
+            android:layout_marginStart="35dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/ct1_f11off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f11MAN"
+            android:layout_marginStart="35dp"
+            android:text="@string/off_" />
+
+
+        <!--        CT-1 PANAL SF-12-->
+
+
+        <TextView
+            android:id="@+id/ct1_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="260dp"
+            android:text="@string/sf_12" />
+
+        <RadioButton
+            android:id="@+id/ct1_f12AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct1_12"
+            android:layout_marginStart="115dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct1_f12MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f12AUT"
+            android:layout_marginStart="115dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct1_f12off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct1_f12MAN"
+            android:layout_marginStart="115dp"
+            android:text="OFF" />
+
+
+        <View
+            android:id="@+id/divider0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ct1_f12off"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black"
+            android:paddingTop="20dp" />
+
+        <!--CT_02 Panal-->
+
+        <TextView
+            android:id="@+id/ct2_panal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider0"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/ct1_panal"
+            android:textAllCaps="true" />
+
+        <!--        CT-2 PANAL SF-03 -->
+
+        <TextView
+            android:id="@+id/ct2_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_panal"
+            android:layout_marginStart="50dp"
+            android:text="@string/sf_03" />
+
+        <RadioButton
+            android:id="@+id/ct2_f03AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_03"
+            android:layout_marginStart="35dp"
+            android:text="@string/aut" />
+
+        <RadioButton
+            android:id="@+id/ct2_f03MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f03AUT"
+            android:layout_marginStart="35dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/ct2_f03off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f03MAN"
+            android:layout_marginStart="35dp"
+            android:text="@string/off_" />
+
+        <!--        CT-2 PANAL SF-04-->
+
+
+        <TextView
+            android:id="@+id/ct2_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_panal"
+            android:layout_marginStart="130dp"
+            android:text="@string/sf_04" />
+
+        <RadioButton
+            android:id="@+id/ct2_f04AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_04"
+            android:layout_marginStart="115dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct2_f04MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f04AUT"
+            android:layout_marginStart="115dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct2_f04off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f04MAN"
+            android:layout_marginStart="115dp"
+            android:text="OFF" />
+
+
+        <!--        CT-1 PANAL SF-05-->
+
+
+        <TextView
+            android:id="@+id/ct2_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_panal"
+            android:layout_marginStart="210dp"
+            android:text="@string/sf_05" />
+
+        <RadioButton
+            android:id="@+id/ct2_f05AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_05"
+            android:layout_marginStart="195dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct2_f05MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f05AUT"
+            android:layout_marginStart="195dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct2_f05off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f05MAN"
+            android:layout_marginStart="195dp"
+            android:text="OFF" />
+
+
+        <!--        CT-2 PANAL SF-06-->
+
+
+        <TextView
+            android:id="@+id/ct2_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_panal"
+            android:layout_marginStart="290dp"
+            android:text="@string/sf_06" />
+
+        <RadioButton
+            android:id="@+id/ct2_f06AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_06"
+            android:layout_marginStart="275dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct2_f06MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f06AUT"
+            android:layout_marginStart="275dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct2_f06off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f06MAN"
+            android:layout_marginStart="275dp"
+            android:text="OFF" />
+
+
+        <!--        CT-2 PANAL SF-07 -->
+
+        <TextView
+            android:id="@+id/ct2_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_f06off"
+            android:layout_marginStart="50dp"
+            android:text="@string/sf_07" />
+
+        <RadioButton
+            android:id="@+id/ct2_f07AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_07"
+            android:layout_marginStart="35dp"
+            android:text="@string/aut" />
+
+        <RadioButton
+            android:id="@+id/ct2_f07MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f07AUT"
+            android:layout_marginStart="35dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/ct2_f07off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f07MAN"
+            android:layout_marginStart="35dp"
+            android:text="@string/off_" />
+
+
+        <!--        CT-2 PANAL SF-08-->
+
+
+        <TextView
+            android:id="@+id/ct2_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_f06off"
+            android:layout_marginStart="130dp"
+            android:text="@string/sf_08" />
+
+        <RadioButton
+            android:id="@+id/ct2_f08AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct2_08"
+            android:layout_marginStart="115dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/ct2_f08MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f08AUT"
+            android:layout_marginStart="115dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/ct2_f08off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct2_f08MAN"
+            android:layout_marginStart="115dp"
+            android:text="OFF" />
+
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ct2_f08off"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black"
+            android:paddingTop="20dp" />
+
+
+        <!--        ST Panel's-->
+
+        <TextView
+            android:id="@+id/st_panal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/st_panal"
+            android:textAllCaps="true" />
+
+        <!--        ST SF-01 -->
+
+        <TextView
+            android:id="@+id/st_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_panal"
+            android:layout_marginStart="50dp"
+            android:text="@string/sf_01" />
+
+        <RadioButton
+            android:id="@+id/st_f01AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_01"
+            android:layout_marginStart="35dp"
+            android:text="@string/aut" />
+
+        <RadioButton
+            android:id="@+id/st_f01MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_f01AUT"
+            android:layout_marginStart="35dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/st_f01off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_f01MAN"
+            android:layout_marginStart="35dp"
+            android:text="@string/off_" />
+
+        <!--        ST-1 SF-02-->
+
+
+        <TextView
+            android:id="@+id/st_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_panal"
+            android:layout_marginStart="130dp"
+            android:text="@string/sf_02" />
+
+        <RadioButton
+            android:id="@+id/st_f02AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_02"
+            android:layout_marginStart="115dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/st_f02MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_f01AUT"
+            android:layout_marginStart="115dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/st_f02off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_f02MAN"
+            android:layout_marginStart="115dp"
+            android:text="OFF" />
+
+
+        <!--        ST SF-03-->
+
+
+        <TextView
+            android:id="@+id/st_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_panal"
+            android:layout_marginStart="210dp"
+            android:text="@string/sf_03" />
+
+        <RadioButton
+            android:id="@+id/st_f03AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_02"
+            android:layout_marginStart="195dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/st_f03MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_f03AUT"
+            android:layout_marginStart="195dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/st_f03off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_f03MAN"
+            android:layout_marginStart="195dp"
+            android:text="OFF" />
+
+           <!--        ST  Ex.F-01-->
+
+        <TextView
+            android:id="@+id/st_ex01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="290dp"
+            android:layout_below="@+id/st_panal"
+            android:text="@string/st_ex01" />
+
+        <RadioButton
+            android:id="@+id/st_ex01AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_ex01"
+            android:layout_marginStart="275dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/st_ex01MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_ex01AUT"
+            android:layout_marginStart="275dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/st_ex01off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_ex01MAN"
+            android:layout_marginStart="275dp"
+            android:text="OFF" />
+
+
+        <!--        ST  EX.F-02 -->
+
+        <TextView
+            android:id="@+id/st_ex02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/st_ex01off"
+            android:text="@string/st_ex02" />
+
+        <RadioButton
+            android:id="@+id/st_ex02AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_ex02"
+            android:layout_marginStart="35dp"
+            android:text="@string/aut" />
+
+        <RadioButton
+            android:id="@+id/st_ex02MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_ex02AUT"
+            android:layout_marginStart="35dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/st_ex02off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_ex02MAN"
+            android:layout_marginStart="35dp"
+            android:text="@string/off_" />
+
+
+        <!--        ST  EX.F-03-->
+
+
+        <TextView
+            android:id="@+id/st_ex03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_below="@+id/st_ex01off"
+            android:text="@string/sf_12" />
+
+        <RadioButton
+            android:id="@+id/st_ex03AUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_ex03"
+            android:layout_marginStart="115dp"
+            android:text="AUT" />
+
+        <RadioButton
+            android:id="@+id/st_ex03MAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_ex03AUT"
+            android:layout_marginStart="115dp"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/st_ex03off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_ex03MAN"
+            android:layout_marginStart="115dp"
+            android:text="OFF" />
+
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ct1_f12off"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black"
+            android:paddingTop="20dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -34,7 +34,10 @@
             android:layout_below="@+id/tvR1"
             android:layout_marginStart="137dp"
             android:minWidth="48dp"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:autofillHints=""
+            android:inputType=""
+            tools:ignore="LabelFor" />
 
 
 
